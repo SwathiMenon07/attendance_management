@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Attendance Correction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Request Attendance Correction</h1>
+        <form id="requestForm" onsubmit="sendRequest(event)">
+            <label for="attendanceDate">Date of Attendance:</label>
+            <input type="date" id="attendanceDate" required>
+            
+            <label for="correctionReason">Reason for Correction:</label>
+            <textarea id="correctionReason" placeholder="Enter your reason here..." rows="4" required></textarea>
+            
+            <button type="submit">Send Request</button>
+            <p id="requestMessage"></p>
+        </form>
+        <button onclick="goBack()">Back to Attendance</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
